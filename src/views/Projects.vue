@@ -8,12 +8,15 @@
                     El front esta realizado con <b>Vue</b> y vue-router.</p></template>
                 <template v-slot:tecs><b>Tecnologias usadas: </b><Vue /> <Nodejs /> <Mongo /></template>
             </Project>
+            <Separator />
 
             <Project src="/blackjack.png " link="https://julitoo14.github.io">
                 <template v-slot:title > <b>Blackjack</b> </template>
                 <template v-slot:descripcion><p>Juego de blackjack que realiza un inicio de sesion mediante LocalStorage, realizado completamente en el cliente, con la finalidad de practicar <b>Javascript</b> </p></template>
                 <template v-slot:tecs> <b>Tecnologias usadas: </b><Html /> <Css /> <Javascript /></template>
             </Project>
+            <Separator />
+
             
             <Project src="/product.png " link="https://productpagenvidia.netlify.app/">
                 <template v-slot:title> <b>Product Page</b> </template>
@@ -32,14 +35,17 @@ import Javascript from '../components/icons/javascript.vue';
 import Mongo from '../components/icons/mongo.vue';
 import Nodejs from '../components/icons/nodejs.vue';
 import Vue from '../components/icons/vue.vue';
+import Separator from '../components/Separator.vue';
 </script>
 
 <style scoped>
-div {
+.contenedor {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
+    flex: 1;
 }
 
 h1{

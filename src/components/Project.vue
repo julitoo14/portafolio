@@ -29,7 +29,6 @@
         justify-content: space-around;
         align-items: flex-start;
         color: white;
-        margin-bottom: 100px;
     }
 
     img {
