@@ -32,7 +32,7 @@
     }
 
     img {
-        width: 100%;
+        width: 80%;
         height: 30em;
         border-radius: 20px;
         border: solid 2px black;
@@ -41,6 +41,7 @@
 
     a{
         width: 58%;
+        text-align: center;
     }
     
     .descripcion {
