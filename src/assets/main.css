@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Sigmar&display=swap');
 
-*{
+* {
     font-family: 'Roboto Condensed', sans-serif;
     scroll-behavior: smooth;
     background-color: white;
@@ -11,5 +11,12 @@
     background-color: #cccccc;
 }
 
+html {
+    min-height: 100%;
+    position: relative;
+}
 
-
+main{
+    margin: 0;
+    margin-bottom: 80px;
+}

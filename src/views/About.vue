@@ -1,3 +1,120 @@
 <template>
-    ABout
+  <div class="fullscreen">
+    <h1><b>Sobre mi</b></h1>
+    <div class="box">
+      <div class="img-info">
+        <img src="pokemon.png" alt="" />
+        <b><p>Nombre: Julian Garcia Suarez</p></b>
+        <b><p>Residencia: Buenos Aires, Argentina</p></b>
+        <b><p>Perfil: Web Developer</p></b>
+        <b><p>Email: juuligarcia2208@gmail.com</p></b>
+        
+        
+        
+      </div>
+      <div class="skills">
+        <h1>Tecnologias</h1>
+        <div class="tec">
+          <Css></Css>
+          <Html></Html>
+        </div>
+        <div class="tec">
+          <Javascript></Javascript>
+          <Mongo></Mongo>
+        </div>
+        <div class="tec">
+          <Nodejs></Nodejs>
+          <Vue></Vue>
+        </div>
+        <div class="tec">
+          <Git></Git>
+          <Sql></Sql>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+
+<script setup>
+import Css from '../components/icons/css.vue';
+import Html from '../components/icons/html.vue';
+import Javascript from '../components/icons/javascript.vue';
+import Mongo from '../components/icons/mongo.vue';
+import Nodejs from '../components/icons/nodejs.vue';
+import Vue from '../components/icons/vue.vue';
+import Git from '../components/icons/git.vue';
+import Sql from '../components/icons/sql.vue';
+</script>
+
+<style>
+
+*{
+    background: none;
+}
+
+.fullscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/background.jpeg');
+    background-color: #cccccc;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 1em;
+  background: none;
+}
+
+.box {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  height: 40em;
+  margin: auto;
+  margin-top: 3em;
+  display: flex;
+  box-shadow: -1px 1px 1px -1px black;
+  border: gray solid 3px;
+  border-radius: 20px;
+}
+
+.img-info {
+  width: 50%;
+  display: flex;
+  background: none;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 3em;
+  flex-direction: column;
+}
+
+
+.img-info img {
+  width: 15em;
+  height: 15em;
+  display: flex;
+}
+
+.tec{
+  display: flex;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.skills {
+  background: none;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+</style>
