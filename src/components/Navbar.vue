@@ -53,7 +53,7 @@
         color: black;
     }
 
-    ul li .link:hover{
+    .link:hover{
         color: rgba(0,255,255,0.5);
     }
 </style>

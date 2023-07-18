@@ -1,13 +1,15 @@
 <template>
   <div class="fullscreen">
-    <h1><b>Sobre mi</b></h1>
+    <h1><b>SOBRE MI</b></h1>
     <div class="box">
       <div class="img-info">
-        <img src="pokemon.png" alt="" />
-        <b><p>Nombre: Julian Garcia Suarez</p></b>
-        <b><p>Residencia: Buenos Aires, Argentina</p></b>
-        <b><p>Perfil: Web Developer</p></b>
-        <b><p>Email: juuligarcia2208@gmail.com</p></b>
+        <img src="photo.jpeg" alt="" />
+        <p>Nombre: Julian Garcia Suarez</p>
+        <p>Residencia: Buenos Aires, Argentina</p>
+        <p>Perfil: Web Developer</p>
+        <p>Email: juuligarcia2208@gmail.com</p>
+        <p>Github: <a class="link" href="https://github.com/julitoo14"> https://github.com/julitoo14</a></p>
+        <p>Linkedin: <a class="link" href="https://www.linkedin.com/in/juliangarciasuarez/">https://www.linkedin.com/in/juliangarciasuarez/</a></p>
         
         
         
@@ -52,6 +54,10 @@ import Sql from '../components/icons/sql.vue';
     background: none;
 }
 
+.link{
+  text-decoration: none;
+}
+
 .fullscreen {
     display: flex;
     flex-direction: column;
@@ -84,24 +90,28 @@ h1 {
   display: flex;
   box-shadow: -1px 1px 1px -1px black;
   border: gray solid 3px;
-  border-radius: 20px;
+  
 }
 
 .img-info {
   width: 50%;
   display: flex;
   background: none;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-evenly;
   padding: 3em;
   flex-direction: column;
+  background-color: #cccccc;
+  font-size: 1em;
 }
 
 
 .img-info img {
-  width: 15em;
+  width: 10em;
   height: 15em;
   display: flex;
+  border: solid black 2px;
+  margin: auto;
 }
 
 .tec{
