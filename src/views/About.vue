@@ -90,6 +90,7 @@ h1 {
   display: flex;
   box-shadow: -1px 1px 1px -1px black;
   border: gray solid 3px;
+  margin-bottom: 10em;
   
 }
 

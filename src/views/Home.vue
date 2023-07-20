@@ -101,10 +101,10 @@ h2 {
     align-items: center;
     background-image: url('/background.jpeg');
     background-color: #cccccc;
-    height: 93.6vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 3em;
 }</style>
