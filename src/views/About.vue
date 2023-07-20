@@ -3,7 +3,7 @@
     <h1><b>SOBRE MI</b></h1>
     <div class="box">
       <div class="img-info">
-        <img src="photo.jpeg" alt="" />
+        <img src="/photo.jpeg" alt="" />
         <p>Nombre: Julian Garcia Suarez</p>
         <p>Residencia: Buenos Aires, Argentina</p>
         <p>Perfil: Web Developer</p>

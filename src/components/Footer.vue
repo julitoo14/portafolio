@@ -7,7 +7,7 @@
         </div>
         <div class="contact">
             <a class="link" href="https://github.com/julitoo14" target="_blank">Github</a>
-            <a class="link" href="https://www.linkedin.com/in/juliangarciasuarez/">Linkedin</a>
+            <a class="link" href="https://www.linkedin.com/in/juliangarciasuarez/" target="_blank">Linkedin</a>
             <p>Email: juuligarcia2208@gmail.com</p>
         </div>
     </footer>
@@ -22,7 +22,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 80px;
+  height: 120px;
   color: white;
   display: flex;
   flex-direction: row;
