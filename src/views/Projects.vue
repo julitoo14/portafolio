@@ -23,6 +23,8 @@
                 <template v-slot:descripcion> <p>Pagina Imitacion del fabricante Nvidia, realizada con <b>Html y Css</b> puro.</p></template>
                 <template v-slot:tecs><b>Tecnologias usadas: </b><Html /> <Css /></template>
             </Project>
+
+            <Separator />
         </div>
     </div>
 </template>
