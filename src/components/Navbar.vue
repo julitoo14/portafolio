@@ -1,59 +1,41 @@
 <template>
-    <nav class="navbar">
-        <div class="logo">
-            <h2><b> Julian Garcia Suarez</b></h2>
+        
+        <div>
+            <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+               <div class="container-fluid">
+                <a href="#" class="navbar-brand"> <img class='logo' src="/Logo.jpeg" alt=""> </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="Menu" class="navbar-collapse collapse text-center">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <RouterLink class="nav-link" to="/">Inicio</RouterLink>
+                        </li>
+                        <li class="nav-item">
+                            <RouterLink class="nav-link" to="/About">Sobre Mi</RouterLink>
+                        </li>
+                        <li class="nav-item">
+                            <RouterLink class="nav-link" to="/Projects">Proyectos</RouterLink>
+                        </li>
+                    </ul>
+                </div>
+               </div> 
+            </nav>
         </div>
-        <ul>
-            <li><RouterLink class="link" to="/"><b>Home</b></RouterLink></li>
-            <li><RouterLink class="link" to="/About"><b>Sobre Mi</b></RouterLink></li>
-            <li><RouterLink class="link" to="/Projects"><b>Portafolio</b></RouterLink></li>
-        </ul>
-    </nav>
+    
 </template>
 
 
 
 <style scoped>
-    .navbar{
-        background-color: white;
-        width: 100%;
-        display: flex;
-        height: 60px;
-        justify-content: space-evenly;
-        align-items: center;
-        position: fixed;
-        box-shadow: 0px 1px 2px rgba(80, 224, 250, 0.5), 
-              0px 2px 4px rgba(80, 224, 250, 0.5), 
-              0px 4px 8px rgba(80, 224, 250, 0.5), 
-              0px 8px 16px rgba(80, 224, 250, 0.5);
-    }
-    
-    *{
-        background-color: white;
-    }
-    .logo{
-        margin-left: 20px;
-        color: whitesmoke;
-    }
 
-    ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        font-size: 1.5em;
-        margin: 0;
-    }
+.logo{
+    height: 5em;
+}
 
+.nav-link{
+    font-size: 2em;
+}
 
-    ul li .link {
-        text-decoration: none;
-        margin-right: 20px;
-        cursor: pointer;
-        color: black;
-    }
-
-    .link:hover{
-        color: rgba(0,255,255,0.5);
-    }
 </style>

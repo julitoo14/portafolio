@@ -1,7 +1,6 @@
 <template>
-  <header>
     <Navbar />
-  </header>
+  
   <main>
     <RouterView />
   </main>
@@ -18,9 +17,7 @@ import Footer from './components/Footer.vue';
 </script>
 
 <style scoped>
-header{
-  height: 60px;
-}
+
 
 </style>
 

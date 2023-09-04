@@ -1,12 +1,20 @@
 <template>
-    <div class="contenedor">
-        <a :href=link target="_blank" > <img :src= src alt=""></a>
-
-        <div class="descripcion">
-            <h2> <slot name="title" /> </h2>
-            <p><slot name="descripcion" ></slot></p>
-            <div class="logos"><slot name="tecs"></slot></div>
+    <div class="container-fluid mb-5">
+        <div class="row mt-5 mb-5">
+            <h2 class="text-center"> <slot name="title" /> </h2>
         </div>
+        
+        <div class="row">
+            <div class="col-sm-12 col-lg-6 ">
+                <a :href=link target="_blank" > <img :src= src alt="" class="center-block"></a>
+            </div>
+            <div class="col-sm-12 col-lg-6 descripcion">
+                <p class="text-center w-100"><slot name="descripcion" ></slot></p>
+                <div class="text-center logos"><slot name="tecs"></slot></div>
+            </div>
+        </div>
+
+        
     </div>
 </template>
 
@@ -21,39 +29,22 @@
 </script>
 
 <style scoped>
-    .contenedor{
-        border-radius: 10px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        color: white;
-    }
 
-    img {
-        width: 80%;
-        height: 30em;
-        border-radius: 20px;
-        border: solid 2px black;
-        
-    }
 
-    a{
-        width: 58%;
-        text-align: center;
-    }
+img {
+    width: 100%;
+    height: 30em;
+    border-radius: 20px;
+    border: solid 2px black;
     
-    .descripcion {
-        display: flex;
-        flex-direction: column;
+}
 
-        width: 38%;
-    }
 
-    .descripcion *{
-        text-align: center;
+@media  screen and (max-width: 800px) {
+    img{
+        height: 20em;
     }
+}
 
     
 </style>

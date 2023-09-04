@@ -8,7 +8,5 @@
     width: 90%;
     background-color: black;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 </style>

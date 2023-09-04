@@ -23,33 +23,10 @@ import Me from '../components/icons/me.vue'
 
 
 <style scoped>
-.fullscreen * {
-    background: none;
-    color: rgb(0, 0, 0);
-}
 
-.link {
-    text-decoration: none;
-    font-size: 1.3em;
-}
-
-button:hover {
-    color: #cccccc;
-    border: #cccccc 2px solid;
-}
-
-button {
-    width: 10em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    border: black solid 2px;
-    margin-bottom: 1em;
-}
-
-h1 {
-    font-size: 3em;
+@media  screen and (min-width: 800px) {
+    h1 {
+    font-size: 2.8em;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange;
@@ -93,6 +70,33 @@ h1 {
 h2 {
     font-size: 2.5em;
 }
+}
+.fullscreen * {
+    background: none;
+    color: rgb(0, 0, 0);
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+button:hover {
+    color: #cccccc;
+    border: #cccccc 2px solid;
+}
+
+button {
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: black solid 2px;
+    margin-bottom: 1em;
+}
+
+
 
 .fullscreen {
     display: flex;
@@ -106,5 +110,4 @@ h2 {
     background-size: cover;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 3em;
 }</style>
