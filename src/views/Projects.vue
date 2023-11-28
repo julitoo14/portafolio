@@ -1,6 +1,12 @@
 <template>
     <div class="contenedor">
         <div>
+            <Project src="/soundJam.png" link="https://juliangarciasuarez.tech">
+                <template v-slot:title> <b>SoundJam</b> </template>
+                <template v-slot:descripcion><p>Aplicacion web para subir y escuchar musica. Realizada con <b>Vue</b> y <b>Vue-router</b> en el front y <b>NodeJs</b> con Express en el backend.</p></template>
+                <template v-slot:tecs> <Vue /> <Nodejs /> <Mongo /> <Javascript /></template>
+            </Project>
+
             <Project src="/pokemon.png " link="https://pokemon-app-julitoo14.vercel.app">
                 <template v-slot:title> <b>Pokemon app</b> </template>
                 <template v-slot:descripcion><p>Aplicacion desarrollada con <b>NodeJs</b> conectada a una base de datos <b>MongoDb</b> que posee registro y validacion de datos del usuario
