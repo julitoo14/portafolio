@@ -6,6 +6,14 @@
                 <template v-slot:descripcion><p>Aplicacion web para subir y escuchar musica. Realizada con <b>Vue</b> y <b>Vue-router</b> en el front y <b>NodeJs</b> con Express en el backend.</p></template>
                 <template v-slot:tecs> <Vue /> <Nodejs /> <Mongo /> <Javascript /></template>
             </Project>
+            <Separator />
+
+            <Project src="/urlShortener.png " link="https://url-shortener-front-vert.vercel.app/">
+                <template v-slot:title> <b>Url Shortener App</b> </template>
+                <template v-slot:descripcion><p>Web que consume una api para acortar urls, realizada con <b>NodeJs</b> con Express y <b>MongoDB</b> .</p></template>
+                <template v-slot:tecs> <Mongo /> <Nodejs /></template>
+            </Project>
+            <Separator />
 
             <Project src="/pokemon.png " link="https://pokemon-app-julitoo14.vercel.app">
                 <template v-slot:title> <b>Pokemon app</b> </template>
@@ -29,13 +37,7 @@
                 <template v-slot:descripcion> <p>Pagina Imitacion del fabricante Nvidia, realizada con <b>Html y Css</b> puro.</p></template>
                 <template v-slot:tecs><Html /> <Css /></template>
             </Project>
-            <Separator />
 
-            <Project src="/urlShortener.png " link="https://url-shortener-front-vert.vercel.app/">
-                <template v-slot:title> <b>Url Shortener App</b> </template>
-                <template v-slot:descripcion><p>Web que consume una api para acortar urls, realizada con <b>NodeJs</b> con Express y <b>MongoDB</b> .</p></template>
-                <template v-slot:tecs> <Mongo /> <Nodejs /></template>
-            </Project>
             
         </div>
     </div>
