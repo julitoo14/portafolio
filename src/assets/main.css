@@ -1,18 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital@0;1&display=swap');
 
 * {
     font-family: 'Roboto Condensed', sans-serif;
     scroll-behavior: smooth;
-    background-color: white;
-    color: rgba(0, 0, 0, 0.863);
+    color: rgba(255, 255, 255, 0.863);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #cccccc;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
-html {
-    min-height: 100%;
-    position: relative;
+body{
+    background-color: rgb(11, 1, 60);
+    cursor: default;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(11, 1, 60);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #1e127e;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #4a39c5;
 }
 

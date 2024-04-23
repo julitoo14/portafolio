@@ -1,114 +1,56 @@
 <template>
-    <div class="fullscreen">
-        <div><h1><b>Hola! Soy Julian Garcia Suarez</b></h1></div>
-        <h2><b>Desarrollador Web</b></h2>
-        <button>
-            <RouterLink to="/projects" class="link">
-                <Portfolio /><b>Portafolio</b>
-            </RouterLink>
-        </button>
-        <button>
-            <RouterLink to="/about" class="link">
-                <Me /><b>Sobre Mi</b>
-            </RouterLink>
-        </button>
+    <div class="home-message">
+        <div class="container">
+            <h1 class="hi-message">Hi! My name is Julian Garcia</h1>
+            <h2 class="carreer">I'm a web developer</h2>
+        </div>
     </div>
+    <About />
+    <Projects />
+    <Contact />
+    <Skills/>
+
 </template>
 
 <script setup>
-import Portfolio from '../components/icons/portfolio.vue'
-import Me from '../components/icons/me.vue'
-
+import Skills from '../components/Skills.vue';
+import Projects from '../components/Projects.vue';
+import About from '../components/About.vue';
+import Contact from "../components/Contact.vue";
 </script>
 
 
 <style scoped>
 
-@media  screen and (min-width: 800px) {
-    h1 {
-    font-size: 2.8em;
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em;
-    /* Adjust as needed */
-    animation:
-        typing 3s steps(40, end),
-        blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: rgb(255, 255, 255);
-    }
-}
-
-
-h2 {
-    font-size: 2.5em;
-}
-}
-.fullscreen * {
-    background: none;
-    color: rgb(0, 0, 0);
-}
-
-.link {
-    text-decoration: none;
-    font-size: 1.3em;
-}
-
-button:hover {
-    color: #cccccc;
-    border: #cccccc 2px solid;
-}
-
-button {
-    width: 10em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container{
+    background-color: rgba(121, 120, 120, 0.157);
+    padding: 1em;
+    width: max-content;
+    margin: auto;
     border-radius: 20px;
-    border: black solid 2px;
-    margin-bottom: 1em;
+}
+
+.home-message{
+    padding-top: 6em;
+    text-align: center;
+    position: relative;
+}
+
+.hi-message{
+    font-size: 3em;
+    font-family: 'Noto Sans Display', monospace;
+}
+
+.carreer{
+    font-size: 2.5em;
+    font-family: 'Noto Sans Display', monospace;
+}
+
+.email{
+    font-size: 1.2em;
+    font-family: 'Noto Sans Display', monospace;
+    margin-top: 2em;
 }
 
 
-
-.fullscreen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('/background.jpeg');
-    background-color: #cccccc;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    box-sizing: border-box;
-}</style>
+</style>
