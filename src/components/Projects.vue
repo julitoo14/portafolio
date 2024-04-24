@@ -1,6 +1,6 @@
 <template>
     <div class="projects">
-        <h1>Projects</h1>
+        <h1>PROJECTS</h1>
         <div class="projects-container">
             <div class="project">
                 <img draggable="false" class="project-image" src="/soundJam.png" alt="">
@@ -99,6 +99,12 @@ h2{
 
 ::-webkit-scrollbar-thumb:hover {
     background: #4a39c5;
+}
+
+@media (max-width: 768px){
+    .projects-container{
+        width: 95%;
+    }
 }
 
 </style>

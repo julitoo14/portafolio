@@ -33,7 +33,6 @@ import Contact from "../components/Contact.vue";
 .home-message{
     padding-top: 6em;
     text-align: center;
-    position: relative;
 }
 
 .hi-message{
@@ -46,10 +45,18 @@ import Contact from "../components/Contact.vue";
     font-family: 'Noto Sans Display', monospace;
 }
 
-.email{
-    font-size: 1.2em;
-    font-family: 'Noto Sans Display', monospace;
-    margin-top: 2em;
+@media (max-width: 768px){
+    .hi-message{
+        font-size: 1.8em;
+    }
+
+    .carreer{
+        font-size: 1.2em;
+    }
+
+    .container{
+        width: 95%;
+    }
 }
 
 

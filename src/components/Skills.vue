@@ -1,6 +1,6 @@
 <template>
     <div class="skills">
-            <h1 class="skills-title">Skills</h1>
+            <h1 class="skills-title">SKILLS</h1>
             <div class="skills-container">
 
                     <div class="tec-container">
@@ -81,6 +81,17 @@
 .tec{
     width: 10em;
 }
+
+
+@media (max-width: 768px) {
+    .skills-container{
+        width: 100%;
+    }
+    .tec{
+        width: 8em;
+    }
+}
+
 </style>
 <script setup>
 </script>

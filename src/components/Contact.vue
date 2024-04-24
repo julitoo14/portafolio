@@ -12,7 +12,7 @@ const copyPhone = () => {
 
 <template>
   <div class="contact">
-    <h1 class="contact-title">Contact</h1>
+    <h1 class="contact-title">CONTACT</h1>
     <div class="contact-info">
       <div class="item">
         <img  draggable="false" src="/mail.svg" />
@@ -88,4 +88,17 @@ const copyPhone = () => {
   .contact-title{
     text-align: center;
   }
+
+  @media (max-width: 768px){
+    .contact-info{
+      width: 90%;
+      font-size: 1.1em;
+    }
+
+    .contact{
+      width: 100%;
+    }
+
+  }
+
 </style>

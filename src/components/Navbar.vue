@@ -1,3 +1,27 @@
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const mobile = ref(false);
+
+const handleResize = () => {
+    if(window.innerWidth <= 768){
+        mobile.value = true;
+    }else{
+        mobile.value = false;
+    }
+}
+
+onMounted(() => {
+    window.addEventListener('resize', handleResize);
+    // Llama a handleResize en la montura para manejar el tamaño inicial de la ventana
+    handleResize();
+});
+
+onUnmounted(() => {
+    window.removeEventListener('resize', handleResize);
+});
+</script>
+
 <template>
     <div>
         <nav class="navbar">
@@ -9,7 +33,7 @@
                 </div>           
             </div>
 
-            <div class="right-nav">
+            <div v-if="mobile === false" class="right-nav">
                 <ul class="social">
                     <li class="icon-item">
                         <a target="_blank" href="https://github.com/julitoo14">
@@ -26,7 +50,6 @@
 
             <ul></ul>
         </nav>
-        <GitHub />
     </div>
     
 </template>
@@ -34,6 +57,7 @@
 <style scoped>
 
 .navbar{
+    box-sizing: border-box;
     background-color: rgb(11, 1, 60);
     padding: 20px;
     display: flex;
@@ -91,6 +115,23 @@
 
 .icon{
     height: 2em;
+}
+
+@media (max-width: 768px){
+
+    .navbar{
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .left-nav{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 0.9em;
+    }
 }
 
 </style>
